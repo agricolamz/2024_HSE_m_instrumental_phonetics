@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Instrumental Phonetics",
+    "section": "",
+    "text": "About the course\n\\[\n\\text{Final Grade} = 0.6 \\times \\text{HW} + 0.4 \\times \\text{Exam}\n\\]",
+    "crumbs": [
+      "About the course"
+    ]
+  },
+  {
+    "objectID": "index.html#recording-from-2021-in-case-you-missed-the-class",
+    "href": "index.html#recording-from-2021-in-case-you-missed-the-class",
+    "title": "Instrumental Phonetics",
+    "section": "Recording from 2021 in case you missed the class",
+    "text": "Recording from 2021 in case you missed the class\n\non acoustics\non Praat and Biocoustics\non Vowels and duration extraction\non sonorants",
+    "crumbs": [
+      "About the course"
+    ]
+  },
+  {
+    "objectID": "index.html#homeworks",
+    "href": "index.html#homeworks",
+    "title": "Instrumental Phonetics",
+    "section": "Homeworks",
+    "text": "Homeworks\n\nHW 1 (due to …):\n\n\nHW 2 (due to …):",
+    "crumbs": [
+      "About the course"
+    ]
+  },
+  {
+    "objectID": "index.html#useful-references",
+    "href": "index.html#useful-references",
+    "title": "Instrumental Phonetics",
+    "section": "Useful references:",
+    "text": "Useful references:\n\n(Ashby and Maidment 2005)\n(Bickford and Floyd 2006)\n(Boersma and Weenink 2021)\n(Fant 1960)\n(Fuchs, Toda, and Żygis 2010)\n(Fulop 2011)\n(Gick, Wilson, and Derrick 2012)\n(Gordon and Ladefoged 2001)\n(Harrington 2010)\n(Hunt 2009)\n(Johnson 2004)\n(Ladefoged and Disner 2012)\n(Maddieson and Ladefoged 1996)\n(Rorabaugh 2010)\n(Grama 2022)\n(Fridland and Kendall 2022)\n\n\n\n\n\nAshby, M., and J. Maidment. 2005. Introducing Phonetic Science. Cambridge University Press.\n\n\nBickford, A. C., and R. Floyd. 2006. Articulatory Phonetics: Tools for Analyzing the World’s Languages. SIL International.\n\n\nBoersma, P., and D. Weenink. 2021. “Praat: Doing Phonetics by Computer.” http://www.praat.org/.\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. 2. Walter de Gruyter.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nFridland, Valerie, and Tyler Kendall. 2022. “Managing Sociophonetic Data in a Study of Regional Variation.” In The Open Handbook of Linguistic Data Management, edited by Andrea L. Berez-Kroeker, Bradley McDonnell, Eve Koller, and Lauren B. Collister, 237–47. The MIT Press. https://doi.org/10.7551/mitpress/12200.001.0001.\n\n\nFuchs, Susanne, Martine Toda, and Marzena Żygis. 2010. Turbulent Sounds: An Interdisciplinary Guide. Vol. 21. Walter de Gruyter.\n\n\nFulop, S. A. 2011. Speech Spectrum Analysis. Springer Science & Business Media.\n\n\nGick, B., I. Wilson, and D. Derrick. 2012. Articulatory Phonetics. John Wiley & Sons.\n\n\nGordon, M., and P. Ladefoged. 2001. “Phonation Types: A Cross-Linguistic Overview.” Journal of Phonetics 29 (4): 383–406.\n\n\nGrama, J. 2022. “Managing Legacy Data in a Sociophonetic Study of Vowel Variation and Change.” In The Open Handbook of Linguistic Data Management, edited by Andrea L. Berez-Kroeker, Bradley McDonnell, Eve Koller, and Lauren B. Collister, 221–36. The MIT Press. https://doi.org/10.7551/mitpress/12200.001.0001.\n\n\nGussenhoven, C., and H. Jacobs. 2017. Understanding Phonology. Routledge.\n\n\nHarrington, J. 2010. Phonetic Analysis of Speech Corpora. John Wiley & Sons.\n\n\nHunt, Elisabeth Hon. 2009. “Acoustic Characterization of the Glides/j/and/w/in American English.” PhD thesis, Massachusetts Institute of Technology.\n\n\nJohnson, K. 2004. “Acoustic and Auditory Phonetics.” Phonetica 61 (1): 56–58.\n\n\nLadefoged, P., and S. F. Disner. 2012. Vowels and Consonants. John Wiley & Sons.\n\n\nMaddieson, I., and P. Ladefoged. 1996. The Sounds of the World’s Languages. Malden, MA: Blackwell Publishing.\n\n\nRorabaugh, C. B. 2010. Notes on Digital Signal Processing: Practical Recipes for Design, Analysis and Implementation, Portable Documents. Prentice Hall.",
+    "crumbs": [
+      "About the course"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#before-we-start",
+    "href": "01-introduction-to-acoustic-phonetics.html#before-we-start",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.1 Before we start",
+    "text": "1.1 Before we start\nIf you missed the class, please see the recording from the previous year.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#phonetics..",
+    "href": "01-introduction-to-acoustic-phonetics.html#phonetics..",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.2 Phonetics?..",
+    "text": "1.2 Phonetics?..\n\nPhonetics is generally assumed to be a subfield that deals with articulatory, acoustic and perceptional aspects of phonological units. Phonology and phonetics together are supposed to describe organization of sounds in languages.\nThis course is about acoustic phonetics.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#simple-harmonic-motion",
+    "href": "01-introduction-to-acoustic-phonetics.html#simple-harmonic-motion",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.3 Simple Harmonic Motion",
+    "text": "1.3 Simple Harmonic Motion\nPeriodic Motion is any type of motion that repeats itself after successuve equal time intervals.\nSimple Harmonic Motion is specific type of periodic motion that arises from\n\nexistence of some equilibrium position for a described object;\nlinear restoring force that tending to pull the described object back to its equilibrium position.\n\n\n\n\n\n\n\n\n\n\nThere are several parameters of wave:\n\nAmplitude (A) is the maximum displacement of the equilibrium position (quick note: this value is always positive).\nPeriod (T) is the duration of time of one cycle in a repeating event. Measured in seconds.\nFrequency (f) is the number of period (cycles) per second. Measured in Hz.\n\n\\[\nf = \\frac{1}{T}\n\\] \\[\nT = \\frac{1}{f}\n\\]\n\n\n\n\n\n\n\n\n\nWe can correlate the physical properties of sound waves with our perception:\n\nWe perceive changes in frequency as pitch;\nWe perceive changes in amplitude as loudness.\n\nOne period of SHM can be devided into 360° of phase φ.\n\n\n\n\n\n\n\n\n\nSo for the case of two SHM they can be out of phase:\n\n\n\n\n\n\n\n\n\n… or one way can be 90° ahead:\n\n\n\n\n\n\n\n\n\nSo after all we have everything important for the wave definition:\n\\[\ns(t) = A \\times \\cos(2\\pi ft + \\phi)\n\\]\n\nA — amplitude;\nf — is the fundamental frequency;\nφ — phase;\nt — time.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#addition-of-waves",
+    "href": "01-introduction-to-acoustic-phonetics.html#addition-of-waves",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.4 Addition of waves",
+    "text": "1.4 Addition of waves\nIf we add some waves, we will get the new wave:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBeats — beats is a phenomenon of the change in amplitude of the sum of two waves with slightly different frequencies. Here is an example from Wikipedia.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#harmonics",
+    "href": "01-introduction-to-acoustic-phonetics.html#harmonics",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.5 Harmonics",
+    "text": "1.5 Harmonics",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#fourier-transform",
+    "href": "01-introduction-to-acoustic-phonetics.html#fourier-transform",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.6 Fourier Transform",
+    "text": "1.6 Fourier Transform\nFourier Transform allows to extract components of the complex wave.\n\n\n\nsmoothie\ncomplex wave\n\n\n\n\n↓\n↓\n\n\n1 banana, cut in chunks\n300 Hz\n\n\n1 cup grapes\n1000 Hz\n\n\nvanilla yogurt\n\n\n\n1/2 apple, cored and chopped\n\n\n\n1.5 cup fresh spinach leaves\n\n\n\n\n\nSpectrograms are differ in window length:\n\nSyllable [ka]\n\nConventional spectrogram and Zhao-Atlas-Marks distribution of the English word had, computed using a Kaiser tapering function (Fulop 2011: 119):\n\nConventional and reassigned spectrograms of the English word right (Fulop 2011: 42):",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#source-filter-model-of-speech-production",
+    "href": "01-introduction-to-acoustic-phonetics.html#source-filter-model-of-speech-production",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.7 Source-Filter Model of Speech Production",
+    "text": "1.7 Source-Filter Model of Speech Production\nThe output energy (at the mouth) for a given frequency is equal to the amplitude the source harmonic, multiplied by the magnitude of the filter function for that the frequency.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#summary",
+    "href": "01-introduction-to-acoustic-phonetics.html#summary",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.8 Summary",
+    "text": "1.8 Summary\n\nsounds are waves (with amplitude, frequency and phase)\nsimple waves can be combined to the complex one\nFourier transform allows to extract components of the complex wave\nIt is not only Fourier transform that allows to extract components of the complex wave\nSource-Filter Model: vocal tract is a resonator that filters some frequencies of the wave produced by vocal folds vibration.\n\n\n\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nFulop, S. A. 2011. Speech Spectrum Analysis. Springer Science & Business Media.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#some-facts",
+    "href": "02-bioacoustics.html#some-facts",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.1 Some facts",
+    "text": "2.1 Some facts\n\nthere is a relation between mass and frequency range:\n\n\n\npatterns are easier than human\n\n\n\n\n\n\n\n\n\n\n\npatterns could be really fast\n\n\n\n\n\n\n\n\n\n\n\npatterns could be really slow\n\n\n\n\n\n\n\n\n\n\n\nsome animals use some tricks!\n\nBBC, Earth’s tropical Island – Borneo (20:47)\n\nanimals adapt their frequency range to environment and to each other (environment pollution, listen to NPR Invisibilia’s episode The Last Sound)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#hearing-and-sound-production",
+    "href": "02-bioacoustics.html#hearing-and-sound-production",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.2 Hearing and Sound Production",
+    "text": "2.2 Hearing and Sound Production\n\nHearing is surprisingly simmilar\nSound production of breathing animals:\n\nnon-aquatic mammals\n\nexhalation through valve\n\naquatic mammals\n\nmoving are from one reservoir to another through the oscillating valve\n\n\nSound production of non-breathing animals:\n\nmuscle-driven mechanical vibrations",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#vibrational-communication",
+    "href": "02-bioacoustics.html#vibrational-communication",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.3 Vibrational Communication",
+    "text": "2.3 Vibrational Communication\n\nsome animals communicate through vibration\nsome animals do both: Владимир Динец (2015) Песни драконов",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#insects",
+    "href": "02-bioacoustics.html#insects",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.4 Insects",
+    "text": "2.4 Insects\n\nexternal sensory hairs\nribbed file on their legs, or wings\nsome crickets have evolved the strategy of digging a horn-shaped burrow in the earth\nTenrecs!",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#land-vertebrates",
+    "href": "02-bioacoustics.html#land-vertebrates",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.5 Land Vertebrates",
+    "text": "2.5 Land Vertebrates\n Why can parrots talk? - Grace Smith-Vidaurre and Tim Wright\n\n2.5.1 Land vertebrates\n\nSome animals adjust their vocal system so that the frequency of the vocal valve closely matches a major resonance of the upper vocal tract, usually that of lowest frequency but not necessarily so. Some species of frogs and birds achieve this by the incorporation of an inflatable sac in the upper vocal tract. (cf. air sacs in apes, e. g. (Hewitt, MacLarnon, and Jones 2002))\nSome animals change their frequency range according to environment\nIn most mammals and other large animals the auditory canal joining the two ears in birds and reptiles has generally degenerated in mammals to the extent that each ear functions nearly independently.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#birds",
+    "href": "02-bioacoustics.html#birds",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.6 Birds",
+    "text": "2.6 Birds\n\nSong birds have a syrinx consisting of dual inflated-membrane valves. These valves can be operated simultaneously and sometimes at different frequencies (see overtone singing), but more usually separately, and produce a pulsating air-flow rich in harmonics.\nSome birds have developed the ability to mimic others around them\n\nBTW: here is the database of bird sounds",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#bats",
+    "href": "02-bioacoustics.html#bats",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.7 Bats",
+    "text": "2.7 Bats\n\necho-location (cf. blind or visually impaired people)\nshort calls\nhuge range 40-80 kHz\nsound emitted through the nose rather than the mouth",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#aquatic-animals",
+    "href": "02-bioacoustics.html#aquatic-animals",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.8 Aquatic Animals",
+    "text": "2.8 Aquatic Animals\n\ncrustaceans – like insects – produce sound by rubbing a toothed leg-file against one of the plates covering their body\nfish species with swim-bladder – like other insects – membrane over the bladder, that oscilates by muscular effort\ndifferent system of hearing (hair-cells, otolith)\n\nBTW: check out a Hydrophone\n\n\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nHewitt, Gwen, Ann MacLarnon, and Kate E Jones. 2002. “The Functions of Laryngeal Air Sacs in Primates: A New Hypothesis.” Folia Primatologica 73 (2-3): 70–94.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "03-vowels.html#theory",
+    "href": "03-vowels.html#theory",
+    "title": "3  Vowels",
+    "section": "3.1 Theory",
+    "text": "3.1 Theory\n\n3.1.1 Recap\n\nSound waves can be described as\n\n\\[\ns(t) = A \\times \\cos(2\\pi ft + \\phi)\n\\]\n\nA — amplitude;\nf — is the fundamental frequency;\nφ — phase;\nt — time.\nSpeech sounds are complex waves\nFourier transform — allows to extract components of the complex wave\nLarynx produce some sound\nVocal tract filter some frequencies\n\n\n\n\n\n\n\n\n\n\n\n\n3.1.2 How shape of the vocal tract influences on vowels? Tube model.\nHistorically, height and backness are impressionistic linguistic terms:\n\n\n\n\n\n\n\n\n\nBut we are intersted just in a cardinal points:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf we analyze acoustics we can get something like this:\n\n\n\n\n\n\n\n\n\n\n\n\n\ni\na\nu\n\n\n\n\nF1\n300\n700\n300\n\n\nF2\n2300\n1400\n800\n\n\n\nHowever, if we analyze real sounds it could be messy:\n\n\n\n\n\n\n\n\n\nTube model, after (Fant 1960): vocal tract is a tube or a set of tubes:\n\n\n\n\n\n\n\n\n\n\n\n3.1.3 Wavelength\n\n\n\n\n\n\n\n\n\n\\[c = \\frac{\\lambda}{T} = \\lambda\\times f \\approx 33400\\text{ cm/s}\\]\n\nc — speed of sound;\nλ — wavelength;\nf — sound frequency;\nT — period.\n\nNeutral vocal tract in the position for the vowel ə:\n\n\n\n\n\n\n\n\n\nResonance is a phenomenon in which a vibrating system or external force drives another system to oscillate with greater amplitude at specific frequencies. The lowest natural frequency at which such a tube resonates will have a wavelength (λ) four times the length of the tube (L).\n\\[c = \\frac{\\lambda}{T} = \\lambda\\times f \\approx 33400\\text{ cm/s}\\]\nThe tube also resonates at odd multiples of that frequency.\n\\[F_1 = \\frac{c}{\\lambda} = \\frac{c}{4 \\times L} \\approx 500 \\text{ Hz}\\] \\[F_2 = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{3} \\times L} = \\frac{3 \\times c}{4 L} \\approx 1500 \\text{ Hz}\\] \\[F_3 = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{5} \\times L} = \\frac{5 \\times c}{4 L} \\approx 2500 \\text{ Hz}\\] \\[F_n = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{n} \\times L} = \\frac{n \\times c}{4 L} \\approx n \\times 500 \\text{ Hz}\\]\nSomething like this we can expect from animals:\n\n\n\n\n\n\n\n\n\n\n\n\nWhen there is a constriction, back tube and constriction form Helmholtz resonator.\n\\[f = \\frac{c}{2\\pi} \\times \\sqrt{\\frac{A}{V\\times L}}\\]\n\nA — the area of the neck;\nL — length of the tube;\nV — volume of the air in the body.\n\n\n\n\n\n\n\n\n\n\n\n\n3.1.4 Other models\n\nPerturbation Theory [Kajiyama 1941, Mrayati et al. 1988]\nQuantal Theory (Stevens 1972)\nTheory of adaptive dispersion (Lindblom and Maddieson 1988)\n\n\n\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. Paris: Mouton.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nLindblom, Björn, and Ian Maddieson. 1988. “Phonetic Universals in Consonant Systems.” Language, Speech and Mind 6278.\n\n\nStevens, K. N. 1972. “The Quantal Nature of Speech: Evidence from Articulatory-Acoustic Data.” Human Communication: A Unified View.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vowels</span>"
+    ]
+  }
+]

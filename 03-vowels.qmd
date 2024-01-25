@@ -1,0 +1,146 @@
+---
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup03, include=FALSE}
+options(digits = 3)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+theme_set(theme_bw()+theme(text = element_text(size=18)))
+```
+
+# Vowels
+
+## Theory
+
+### Recap
+
+* Sound waves can be described as
+
+$$
+s(t) = A \times \cos(2\pi ft + \phi)
+$$
+
+  * A — amplitude;
+  * f — is the fundamental frequency;
+  * φ — phase;
+  * t — time.
+  
+* Speech sounds are complex waves
+* Fourier transform --- allows to extract components of the complex wave
+* [Larynx produce some sound](https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/images/03.01_larynx.mp4?raw=true)
+* [Vocal tract filter some frequencies](https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/images/03.02_MRI-speech.mp4?raw=true)
+
+```{r}
+knitr::include_graphics("images/01.07-source-filter.png", dpi = 100)
+```
+
+### How shape of the vocal tract influences on vowels? Tube model.
+
+Historically, height and backness are impressionistic linguistic terms:
+
+```{r}
+knitr::include_graphics("images/03.03_vowel.png", dpi = 300)
+```
+
+But we are intersted just in a cardinal points:
+
+```{r}
+knitr::include_graphics("images/03.04_cardinal_vowels.png", dpi = 300)
+```
+
+```{r}
+knitr::include_graphics("images/03.05_faces.png", dpi = 170)
+```
+
+If we analyze acoustics we can get something like this:
+
+```{r}
+knitr::include_graphics("images/03.06_plots.png", dpi = 200)
+```
+
+|    |   i  |   a  |  u  |
+|:--:|:----:|:----:|:---:|
+| F1 |  300 |  700 | 300 |
+| F2 | 2300 | 1400 | 800 |
+
+However, if we analyze real sounds it could be messy:
+
+```{r}
+library(phonTools)
+data(pb52)
+pb52 %>% 
+  mutate(vowel = ipa::convert_phonetics(vowel, from = "xsampa", to = "ipa")) %>%
+  ggplot(aes(f2, f1, label = vowel, color = vowel))+
+  stat_ellipse()+
+  geom_text()+
+  scale_x_reverse()+
+  scale_y_reverse()
+```
+
+Tube model, after [@fant60]: vocal tract is a tube or a set of tubes:
+
+```{r}
+knitr::include_graphics("images/03.07_tubes.png", dpi = 300)
+```
+
+### Wavelength
+
+```{r}
+knitr::include_graphics("images/03.08-wavelength.png", dpi = 100)
+```
+
+$$c = \frac{\lambda}{T} = \lambda\times f \approx 33400\text{ cm/s}$$
+
+* c  --- speed of sound; 
+* λ --- wavelength; 
+* f --- sound frequency; 
+* T --- period.
+
+
+Neutral vocal tract in the position for the vowel ə:
+
+```{r}
+knitr::include_graphics("images/03.09-shwa-tube.png", dpi = 100)
+```
+
+
+Resonance is a phenomenon in which a vibrating system or external force drives another system to oscillate with greater amplitude at specific frequencies. The lowest natural frequency at which such a tube resonates will have a wavelength (λ) **four times the length of the tube** (L).
+
+$$c = \frac{\lambda}{T} = \lambda\times f \approx 33400\text{ cm/s}$$
+
+The tube also resonates at **odd multiples** of that frequency.
+
+$$F_1 = \frac{c}{\lambda} = \frac{c}{4 \times L} \approx 500 \text{ Hz}$$
+$$F_2 = \frac{c}{\lambda} = \frac{c}{\frac{4}{3} \times L} = \frac{3 \times c}{4 L} \approx 1500 \text{ Hz}$$
+$$F_3 = \frac{c}{\lambda} = \frac{c}{\frac{4}{5} \times L} = \frac{5 \times c}{4 L} \approx 2500 \text{ Hz}$$
+$$F_n = \frac{c}{\lambda} = \frac{c}{\frac{4}{n} \times L} = \frac{n \times c}{4 L} \approx n \times 500 \text{ Hz}$$
+
+Something like this we can expect from animals:
+
+```{r}
+knitr::include_graphics("images/03.10-cat-meow.png")
+```
+
+<audio controls>
+<source src = "cat.wav">
+</audio>
+
+When there is a constriction, back tube and constriction form [Helmholtz resonator](https://en.wikipedia.org/wiki/Helmholtz_resonance).
+
+$$f = \frac{c}{2\pi} \times \sqrt{\frac{A}{V\times L}}$$
+
+* A --- the area of the neck; 
+* L --- length of the tube; 
+* V --- volume of the air in the body.
+
+```{r}
+knitr::include_graphics("images/03.11-tubes.png", dpi = 100)
+```
+
+### Other models
+
+* Perturbation Theory [Kajiyama 1941, Mrayati et al. 1988]
+* Quantal Theory [@stevens72]
+* Theory of adaptive dispersion [@lindblom88]
