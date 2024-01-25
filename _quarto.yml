@@ -5,7 +5,7 @@ project:
 book:
   title: "Instrumental Phonetics"
   author: "Г. А. Мороз"
-  repo-url: https://agricolamz.github.io/2024_HSE_m_instrumental_phonetics/
+  repo-url: https://github.com/agricolamz/2024_HSE_m_instrumental_phonetics
   chapters:
     - index.qmd
     - 01-introduction-to-acoustic-phonetics.qmd
