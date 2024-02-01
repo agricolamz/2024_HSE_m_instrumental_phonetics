@@ -29,8 +29,8 @@ $$
   
 * Speech sounds are complex waves
 * Fourier transform --- allows to extract components of the complex wave
-* [Larynx produce some sound](https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/images/03.01_larynx.mp4?raw=true)
-* [Vocal tract filter some frequencies](https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/images/03.02_MRI-speech.mp4?raw=true)
+* [Larynx produce some sound](https://github.com/agricolamz/2024_HSE_m_instrumental_phonetics/blob/master/images/03.01_larynx.mp4?raw=true)
+* [Vocal tract filter some frequencies](https://github.com/agricolamz/2024_HSE_m_instrumental_phonetics/blob/master/images/03.02_MRI-speech.mp4?raw=true)
 
 ```{r}
 knitr::include_graphics("images/01.07-source-filter.png", dpi = 100)
