@@ -21,7 +21,7 @@ $$
 
 ## Homeworks
 
-### HW 1 (due to 23.12.2022, 23:59): 
+### HW 1 (due to 23.02.2024, 23:59): 
 
 * Create an annotation for those sound file containing words [mza 'lamp'](https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/hw/hw1/01.wav?raw=true), [mzə 'moon'](https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/hw/hw1/02.wav?raw=true), [mtsa 'fire'](https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/hw/hw1/03.wav?raw=true), [mtsə 'lie'](https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/hw/hw1/04.wav?raw=true). Here is an example:
 
