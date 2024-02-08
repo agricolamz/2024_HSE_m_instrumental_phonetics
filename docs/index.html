@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.533">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Г. А. Мороз">
+<meta name="author" content="G. Moroz">
 
 <title>Instrumental Phonetics</title>
 <style>
@@ -173,13 +173,19 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-bioacoustics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Animal bioacoustics based on [@fletcher07]</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Animal bioacoustics based on <span class="citation" data-cites="fletcher07">(</span></span></span></a><a href="#ref-fletcher07" role="doc-biblioref">Fletcher 2007</a>)
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-vowels.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Vowels</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-sonorants.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sonorants</span></span></a>
   </div>
 </li>
     </ul>
@@ -197,8 +203,7 @@ window.Quarto = {
   <li><a href="#recording-from-2021-in-case-you-missed-the-class" id="toc-recording-from-2021-in-case-you-missed-the-class" class="nav-link" data-scroll-target="#recording-from-2021-in-case-you-missed-the-class">Recording from 2021 in case you missed the class</a></li>
   <li><a href="#homeworks" id="toc-homeworks" class="nav-link" data-scroll-target="#homeworks">Homeworks</a>
   <ul class="collapse">
-  <li><a href="#hw-1-due-to" id="toc-hw-1-due-to" class="nav-link" data-scroll-target="#hw-1-due-to">HW 1 (due to …):</a></li>
-  <li><a href="#hw-2-due-to" id="toc-hw-2-due-to" class="nav-link" data-scroll-target="#hw-2-due-to">HW 2 (due to …):</a></li>
+  <li><a href="#hw-1-due-to-23.12.2022-2359" id="toc-hw-1-due-to-23.12.2022-2359" class="nav-link" data-scroll-target="#hw-1-due-to-23.12.2022-2359">HW 1 (due to 23.12.2022, 23:59):</a></li>
   </ul></li>
   <li><a href="#useful-references" id="toc-useful-references" class="nav-link" data-scroll-target="#useful-references">Useful references:</a></li>
   </ul></li>
@@ -220,7 +225,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Г. А. Мороз </p>
+             <p>G. Moroz </p>
           </div>
   </div>
     
@@ -262,11 +267,23 @@ window.Quarto = {
 </section>
 <section id="homeworks" class="level2">
 <h2 class="anchored" data-anchor-id="homeworks">Homeworks</h2>
-<section id="hw-1-due-to" class="level3">
-<h3 class="anchored" data-anchor-id="hw-1-due-to">HW 1 (due to …):</h3>
-</section>
-<section id="hw-2-due-to" class="level3">
-<h3 class="anchored" data-anchor-id="hw-2-due-to">HW 2 (due to …):</h3>
+<section id="hw-1-due-to-23.12.2022-2359" class="level3">
+<h3 class="anchored" data-anchor-id="hw-1-due-to-23.12.2022-2359">HW 1 (due to 23.12.2022, 23:59):</h3>
+<ul>
+<li>Create an annotation for those sound file containing words <a href="https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/hw/hw1/01.wav?raw=true">mza ‘lamp’</a>, <a href="https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/hw/hw1/02.wav?raw=true">mzə ‘moon’</a>, <a href="https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/hw/hw1/03.wav?raw=true">mtsa ‘fire’</a>, <a href="https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/blob/master/hw/hw1/04.wav?raw=true">mtsə ‘lie’</a>. Here is an example:</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hw/hw1/hw1_1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Send the result <code>.TextGrid</code> file to the course assistant <a href="mailto:ritavpopova@gmail.com">Rita Popova</a> with the topic <code>Instrumental Phonetics: HW 1</code>.</li>
+</ul>
 </section>
 </section>
 <section id="useful-references" class="level2">
@@ -512,7 +529,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {

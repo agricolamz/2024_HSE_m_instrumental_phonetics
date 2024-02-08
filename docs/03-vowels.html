@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.533">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -50,6 +84,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./04-sonorants.html" rel="next">
 <link href="./02-bioacoustics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -172,13 +207,19 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-bioacoustics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Animal bioacoustics based on [@fletcher07]</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Animal bioacoustics based on <span class="citation" data-cites="fletcher07">(</span></span></span></a><a href="#ref-fletcher07" role="doc-biblioref">Fletcher 2007</a>)
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-vowels.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Vowels</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-sonorants.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sonorants</span></span></a>
   </div>
 </li>
     </ul>
@@ -197,6 +238,12 @@ window.Quarto = {
   <li><a href="#how-shape-of-the-vocal-tract-influences-on-vowels-tube-model." id="toc-how-shape-of-the-vocal-tract-influences-on-vowels-tube-model." class="nav-link" data-scroll-target="#how-shape-of-the-vocal-tract-influences-on-vowels-tube-model."><span class="header-section-number">3.1.2</span> How shape of the vocal tract influences on vowels? Tube model.</a></li>
   <li><a href="#wavelength" id="toc-wavelength" class="nav-link" data-scroll-target="#wavelength"><span class="header-section-number">3.1.3</span> Wavelength</a></li>
   <li><a href="#other-models" id="toc-other-models" class="nav-link" data-scroll-target="#other-models"><span class="header-section-number">3.1.4</span> Other models</a></li>
+  </ul></li>
+  <li><a href="#vowel-formants-normalization" id="toc-vowel-formants-normalization" class="nav-link" data-scroll-target="#vowel-formants-normalization"><span class="header-section-number">3.2</span> Vowel formants’ normalization</a>
+  <ul class="collapse">
+  <li><a href="#acoustic-vowel-normalization-procedures" id="toc-acoustic-vowel-normalization-procedures" class="nav-link" data-scroll-target="#acoustic-vowel-normalization-procedures"><span class="header-section-number">3.2.1</span> Acoustic vowel normalization procedures</a></li>
+  <li><a href="#lobanov71-z-score-transformation" id="toc-lobanov71-z-score-transformation" class="nav-link" data-scroll-target="#lobanov71-z-score-transformation"><span class="header-section-number">3.2.2</span> <span class="citation" data-cites="lobanov71">(Lobanov 1971)</span> z-score transformation</a></li>
+  <li><a href="#vowels-package" id="toc-vowels-package" class="nav-link" data-scroll-target="#vowels-package"><span class="header-section-number">3.2.3</span> <code>vowels</code> package</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -408,20 +455,302 @@ s(t) = A \times \cos(2\pi ft + \phi)
 <li>Quantal Theory <span class="citation" data-cites="stevens72">(<a href="#ref-stevens72" role="doc-biblioref">Stevens 1972</a>)</span></li>
 <li>Theory of adaptive dispersion <span class="citation" data-cites="lindblom88">(<a href="#ref-lindblom88" role="doc-biblioref">Lindblom and Maddieson 1988</a>)</span></li>
 </ul>
+</section>
+</section>
+<section id="vowel-formants-normalization" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="vowel-formants-normalization"><span class="header-section-number">3.2</span> Vowel formants’ normalization</h2>
+<p>This section is based on <span class="citation" data-cites="adank03">(<a href="#ref-adank03" role="doc-biblioref">Adank 2003</a>)</span>. However, see the more detailed overview in <span class="citation" data-cites="flynn11">(<a href="#ref-flynn11" role="doc-biblioref">Flynn 2011</a>)</span>.</p>
+<p>There are three possible sources of variation in vowel formants measurements <span class="citation" data-cites="ladefoged57 pols73 adank03">(<a href="#ref-ladefoged57" role="doc-biblioref">Ladefoged and Broadbent 1957</a>; <a href="#ref-pols73" role="doc-biblioref">Pols, Tromp, and Plomp 1973</a>: 1095; <a href="#ref-adank03" role="doc-biblioref">Adank 2003</a>)</span>:</p>
+<ul>
+<li>acoustic variation;</li>
+<li>speaker variation;
+<ul>
+<li>sociolinguistic;</li>
+<li>anatomical/physiological variation;</li>
+</ul></li>
+<li>and measurement error (“residual variance” in <span class="citation" data-cites="pols73">(<a href="#ref-pols73" role="doc-biblioref">Pols, Tromp, and Plomp 1973</a>)</span>).</li>
+</ul>
+<p>There are a lot of researchers aimed to reduce speaker-related variation using <strong>acoustic vowel normalization</strong> (e. g. <span class="citation" data-cites="gerstman68 lobanov71 syrdal86">(<a href="#ref-gerstman68" role="doc-biblioref">Gerstman 1968</a>; <a href="#ref-lobanov71" role="doc-biblioref">Lobanov 1971</a>; <a href="#ref-syrdal86" role="doc-biblioref">Syrdal and Gopal 1986</a>)</span>). However there are some researches that afraid that normalization procedures can reduce interesting for the linguistics information like sociolinguistic/dialectal signal in data <span class="citation" data-cites="hindle78 disner80 thomas02">(<a href="#ref-hindle78" role="doc-biblioref">Hindle 1978</a>; <a href="#ref-disner80" role="doc-biblioref">Disner 1980</a>; <a href="#ref-thomas02" role="doc-biblioref">Thomas 2002, 174–75</a>)</span>.</p>
+<p>Human listeners deal seemingly effortlessly with all three possible sources of variation, but the dataset from <span class="citation" data-cites="peterson52">(<a href="#ref-peterson52" role="doc-biblioref">Peterson and Barney 1952</a>)</span> shows extrordinary variation:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03-vowels_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="acoustic-vowel-normalization-procedures" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="acoustic-vowel-normalization-procedures"><span class="header-section-number">3.2.1</span> Acoustic vowel normalization procedures</h3>
+<p>There are several classes of vowel normalization procedures:</p>
+<ul>
+<li>formant-based procedures <span class="citation" data-cites="gerstman68 lobanov71 fant75 syrdal86 miller89">(<a href="#ref-gerstman68" role="doc-biblioref">Gerstman 1968</a>; <a href="#ref-lobanov71" role="doc-biblioref">Lobanov 1971</a>; <a href="#ref-fant75" role="doc-biblioref">Fant 1975</a>; <a href="#ref-syrdal86" role="doc-biblioref">Syrdal and Gopal 1986</a>; <a href="#ref-miller89" role="doc-biblioref">Miller 1989</a>)</span>;</li>
+<li>whole-spectrum procedures <span class="citation" data-cites="klein70 pols73 bladon81 bladon82 klatt82">(<a href="#ref-klein70" role="doc-biblioref">Klein, Plomp, and Pols 1970</a>; <a href="#ref-pols73" role="doc-biblioref">Pols, Tromp, and Plomp 1973</a>; <a href="#ref-bladon81" role="doc-biblioref">Bladon and Lindblom 1981</a>; <a href="#ref-bladon82" role="doc-biblioref">Bladon 1982</a>; <a href="#ref-klatt82" role="doc-biblioref">Klatt 1982</a>)</span>;</li>
+<li>Neural networks <span class="citation" data-cites="weenink93 weenink97">(<a href="#ref-weenink93" role="doc-biblioref">D. J. M. Weenink 1993</a>; <a href="#ref-weenink97" role="doc-biblioref">D. Weenink 1997</a>)</span>.</li>
+</ul>
+<p>Formant-based procedures are the most compact (just 2- or 3-dimensional represetations) and comparable crosslinguisticaly.</p>
+<p>In <span class="citation" data-cites="adank03">(<a href="#ref-adank03" role="doc-biblioref">Adank 2003</a>)</span> author compared 11 methods of vowel normalization:</p>
+<table class="table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 28%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>abb</th>
+<th>method</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>HZ</td>
+<td>the baseline condition, formants in Hz</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>LOG</td>
+<td>a log-transformation of the frequency scale</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>BARK</td>
+<td>a bark-transformation of the frequency scale</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>MEL</td>
+<td>a mel-transformation of the frequency scale</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>ERB</td>
+<td>an ERB-transformation of the frequency scale</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>GERSTMAN</td>
+<td>Gerstman’s (1968) range normalization</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>LOBANOV</td>
+<td>Lobanov’s (1971) z-score transformation</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>NORDSTRÖM &amp; LINDBLOM</td>
+<td>Nordström &amp; Lindblom’s (1975) vocal-tract scaling</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>CLIH i4</td>
+<td>Nearey’s (1978) individual log-mean procedure</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>CLIH s4</td>
+<td>Nearey’s (1978) shared log-mean procedure</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>SYRDAL &amp; GOPAL</td>
+<td>Syrdal &amp; Gopal’s (1986) bark-distance model</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>MILLER</td>
+<td>Miller’s (1989) formant-ratio model</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lobanov71-z-score-transformation" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="lobanov71-z-score-transformation"><span class="header-section-number">3.2.2</span> <span class="citation" data-cites="lobanov71">(<a href="#ref-lobanov71" role="doc-biblioref">Lobanov 1971</a>)</span> z-score transformation</h3>
+<p>The idea behind the Lobanov’s method is simple z-normalization. Imagine some random distribution:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03-vowels_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If we apply the folowing normalization, the distribution form will be the same, however the scale will be unified with mean = 0 and standard deviation = 1:</p>
+<p><span class="math display">\[x_{normalized} = \frac{x-\mu}{\sigma}\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03-vowels_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phonTools)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pb52)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>pb52 <span class="sc">%&gt;%</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(speaker) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">vowel =</span> ipa<span class="sc">::</span><span class="fu">convert_phonetics</span>(vowel, <span class="at">from =</span> <span class="st">"xsampa"</span>, <span class="at">to =</span> <span class="st">"ipa"</span>),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">scaled_f1 =</span> <span class="fu">scale</span>(f1),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">scaled_f2 =</span> <span class="fu">scale</span>(f2)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(scaled_f2, scaled_f1, <span class="at">label =</span> vowel, <span class="at">color =</span> vowel))<span class="sc">+</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_ellipse</span>()<span class="sc">+</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>()<span class="sc">+</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_reverse</span>()<span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_reverse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03-vowels_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>You can find implementation of other methods in R package <code>vowels</code>.</p>
+<p>Try to normalize and visualize data from the dataset Hillenbrand et al.&nbsp;(1995), stored in <code>h95</code> variable in the package <code>phonTools</code>.</p>
+<p>Sometimes it make sense to get back to the formant values:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pb52 <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">overall_mean_f1 =</span> <span class="fu">mean</span>(f1),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">overall_sd_f1 =</span> <span class="fu">sd</span>(f1),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">overall_mean_f2 =</span> <span class="fu">mean</span>(f2),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">overall_sd_f2 =</span> <span class="fu">sd</span>(f2)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(speaker) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">vowel =</span> ipa<span class="sc">::</span><span class="fu">convert_phonetics</span>(vowel, <span class="at">from =</span> <span class="st">"xsampa"</span>, <span class="at">to =</span> <span class="st">"ipa"</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">sclaed_f1 =</span> <span class="fu">scale</span>(f1),</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">sclaed_f2 =</span> <span class="fu">scale</span>(f2),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">restored_f1 =</span> sclaed_f1<span class="sc">*</span>overall_sd_f1<span class="sc">+</span>overall_mean_f1,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">restored_f2 =</span> sclaed_f2<span class="sc">*</span>overall_sd_f2<span class="sc">+</span>overall_mean_f2) <span class="sc">%&gt;%</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(restored_f2, restored_f1, <span class="at">label =</span> vowel, <span class="at">color =</span> vowel))<span class="sc">+</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_ellipse</span>()<span class="sc">+</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>()<span class="sc">+</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_reverse</span>()<span class="sc">+</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_reverse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03-vowels_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="vowels-package" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="vowels-package"><span class="header-section-number">3.2.3</span> <code>vowels</code> package</h3>
+<p>You can find implementation of other methods in R package <code>vowels</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vowels)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(ohiovowels)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">vowelplot</span>(<span class="fu">norm.lobanov</span>(ohiovowels), <span class="at">color=</span><span class="st">"vowels"</span>, <span class="at">label=</span><span class="st">"vowels"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03-vowels_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vowelplot</span>(<span class="fu">norm.labov</span>(ohiovowels), <span class="at">color=</span><span class="st">"vowels"</span>, <span class="at">label=</span><span class="st">"vowels"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03-vowels_files/figure-html/unnamed-chunk-17-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vowelplot</span>(<span class="fu">norm.nearey</span>(ohiovowels), <span class="at">color=</span><span class="st">"vowels"</span>, <span class="at">label=</span><span class="st">"vowels"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03-vowels_files/figure-html/unnamed-chunk-17-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vowelplot</span>(<span class="fu">norm.wattfabricius</span>(ohiovowels), <span class="at">color=</span><span class="st">"vowels"</span>, <span class="at">label=</span><span class="st">"vowels"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03-vowels_files/figure-html/unnamed-chunk-17-4.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-adank03" class="csl-entry" role="listitem">
+Adank, P. M. 2003. <span>“Vowel Normalization. A Perceptual Acoustic Study of Dutch Vowels.”</span> PhD thesis, Ponsen &amp; Looijen bv, Wageningen.
+</div>
+<div id="ref-bladon82" class="csl-entry" role="listitem">
+Bladon, RAW. 1982. <span>“Arguments Against Formants in the Auditory Representation of Speech.”</span> <em>The Representation of Speech in the Peripheral Auditory System</em>.
+</div>
+<div id="ref-bladon81" class="csl-entry" role="listitem">
+Bladon, RAW, and Björn Lindblom. 1981. <span>“Modeling the Judgment of Vowel Quality Differences.”</span> <em>The Journal of the Acoustical Society of America</em> 69 (5): 1414–22.
+</div>
+<div id="ref-disner80" class="csl-entry" role="listitem">
+Disner, S. F. 1980. <span>“Evaluation of Vowel Normalization Procedures.”</span> <em>The Journal of the Acoustical Society of America</em> 67 (1): 253–61.
+</div>
 <div id="ref-fant60" class="csl-entry" role="listitem">
 Fant, G. 1960. <em>Acoustic Theory of Speech Production</em>. Paris: Mouton.
+</div>
+<div id="ref-fant75" class="csl-entry" role="listitem">
+———. 1975. <span>“Non-Uniform Vowel Normalization.”</span> <em>STL-QPSR</em> 16 (2-3): 1–19.
 </div>
 <div id="ref-fletcher07" class="csl-entry" role="listitem">
 Fletcher, N. 2007. <span>“Animal Bioacoustics.”</span> In <em>Springer Handbook of Acoustics</em>, edited by Thomas D. Rossing, 785–804. New York: Springer.
 </div>
+<div id="ref-flynn11" class="csl-entry" role="listitem">
+Flynn, N. 2011. <span>“Comparing Vowel Formant Normalisation Procedures.”</span> <em>York Papers in Linguistics Series</em> 2 (11): 1–28.
+</div>
+<div id="ref-gerstman68" class="csl-entry" role="listitem">
+Gerstman, Louis. 1968. <span>“Classification of Self-Normalized Vowels.”</span> <em>IEEE Transactions on Audio and Electroacoustics</em> 16 (1): 78–80.
+</div>
+<div id="ref-hindle78" class="csl-entry" role="listitem">
+Hindle, D. 1978. <span>“Approaches to Vowel Normalization in the Study of Natural Speech.”</span> <em>Linguistic Variation: Models and Methods</em>, 161–71.
+</div>
+<div id="ref-klatt82" class="csl-entry" role="listitem">
+Klatt, D. 1982. <span>“Prediction of Perceived Phonetic Distance from Critical-Band Spectra: <span>A</span> First Step.”</span> In <em>ICASSP’82. IEEE International Conference on Acoustics, Speech, and Signal Processing</em>, 7:1278–81. IEEE.
+</div>
+<div id="ref-klein70" class="csl-entry" role="listitem">
+Klein, W., R. Plomp, and L. C. W. Pols. 1970. <span>“Vowel Spectra, Vowel Spaces, and Vowel Identification.”</span> <em>The Journal of the Acoustical Society of America</em> 48 (4B): 999–1009.
+</div>
+<div id="ref-ladefoged57" class="csl-entry" role="listitem">
+Ladefoged, P., and D. E. Broadbent. 1957. <span>“Information Conveyed by Vowels.”</span> <em>The Journal of the Acoustical Society of America</em> 29 (1): 98–104.
+</div>
 <div id="ref-lindblom88" class="csl-entry" role="listitem">
 Lindblom, Björn, and Ian Maddieson. 1988. <span>“Phonetic Universals in Consonant Systems.”</span> <em>Language, Speech and Mind</em> 6278.
 </div>
+<div id="ref-lobanov71" class="csl-entry" role="listitem">
+Lobanov, B. M. 1971. <span>“Classification of Russian Vowels Spoken by Different Speakers.”</span> <em>The Journal of the Acoustical Society of America</em> 49 (2B): 606–8.
+</div>
+<div id="ref-miller89" class="csl-entry" role="listitem">
+Miller, J. D. 1989. <span>“Auditory-Perceptual Interpretation of the Vowel.”</span> <em>The Journal of the Acoustical Society of America</em> 85 (5): 2114–34.
+</div>
+<div id="ref-peterson52" class="csl-entry" role="listitem">
+Peterson, G. E., and H. L. Barney. 1952. <span>“Control Methods Used in a Study of the Vowels.”</span> <em>The Journal of the Acoustical Society of America</em> 24 (2): 175–84.
+</div>
+<div id="ref-pols73" class="csl-entry" role="listitem">
+Pols, L. C. W., H. R. C. Tromp, and R. Plomp. 1973. <span>“Frequency Analysis of Dutch Vowels from 50 Male Speakers.”</span> <em>The Journal of the Acoustical Society of America</em> 53 (4): 1093–1101.
+</div>
 <div id="ref-stevens72" class="csl-entry" role="listitem">
 Stevens, K. N. 1972. <span>“The Quantal Nature of Speech: Evidence from Articulatory-Acoustic Data.”</span> <em>Human Communication: A Unified View</em>.
+</div>
+<div id="ref-syrdal86" class="csl-entry" role="listitem">
+Syrdal, A. K., and H. S. Gopal. 1986. <span>“A Perceptual Model of Vowel Recognition Based on the Auditory Representation of American English Vowels.”</span> <em>The Journal of the Acoustical Society of America</em> 79 (4): 1086–1100.
+</div>
+<div id="ref-thomas02" class="csl-entry" role="listitem">
+Thomas, E. R. 2002. <span>“Instrumental Phonetics.”</span> In <em>The Handbook of Language Variation and Change</em>, edited by J. K. Chambers, P. Trudgill, and N. Schilling-Estes, 168–200. Oxford: Blackwell.
+</div>
+<div id="ref-weenink93" class="csl-entry" role="listitem">
+Weenink, D. J. M. 1993. <span>“Modelling Speaker Normalization by Adapting the Bias in a Neural Net.”</span> In <em>Proceedings Eurospeech93</em>, 2259–62. Berlin.
+</div>
+<div id="ref-weenink97" class="csl-entry" role="listitem">
+Weenink, David. 1997. <span>“Category <span>ART</span>: <span>A</span> Variation on Adaptive Resonance Theory Neural Networks.”</span> In <em>Proc. Institute of Phonetic Sciences University of Amsterdam</em>, 21:117–29. Citeseer.
 </div>
 </div>
 </section>
@@ -589,7 +918,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -817,6 +1151,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
                 
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./04-sonorants.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>Sonorants</span>">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sonorants</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

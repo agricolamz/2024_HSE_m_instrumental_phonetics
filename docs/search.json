@@ -24,7 +24,7 @@
     "href": "index.html#homeworks",
     "title": "Instrumental Phonetics",
     "section": "Homeworks",
-    "text": "Homeworks\n\nHW 1 (due to …):\n\n\nHW 2 (due to …):",
+    "text": "Homeworks\n\nHW 1 (due to 23.12.2022, 23:59):\n\nCreate an annotation for those sound file containing words mza ‘lamp’, mzə ‘moon’, mtsa ‘fire’, mtsə ‘lie’. Here is an example:\n\n\n\n\n\n\n\n\n\n\n\nSend the result .TextGrid file to the course assistant Rita Popova with the topic Instrumental Phonetics: HW 1.",
     "crumbs": [
       "About the course"
     ]
@@ -40,10 +40,10 @@
     ]
   },
   {
-    "objectID": "01-introduction-to-acoustic-phonetics.html#before-we-start",
-    "href": "01-introduction-to-acoustic-phonetics.html#before-we-start",
+    "objectID": "01-introduction-to-acoustic-phonetics.html",
+    "href": "01-introduction-to-acoustic-phonetics.html",
     "title": "1  Introduction to Acoustic Phonetics",
-    "section": "1.1 Before we start",
+    "section": "",
     "text": "1.1 Before we start\nIf you missed the class, please see the recording from the previous year.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
@@ -120,11 +120,21 @@
     ]
   },
   {
+    "objectID": "02-bioacoustics.html",
+    "href": "02-bioacoustics.html",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "",
+    "text": "2.1 Some facts\nBBC, Earth’s tropical Island – Borneo (20:47), see here",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
     "objectID": "02-bioacoustics.html#some-facts",
     "href": "02-bioacoustics.html#some-facts",
     "title": "2  Animal bioacoustics based on (Fletcher 2007)",
-    "section": "2.1 Some facts",
-    "text": "2.1 Some facts\n\nthere is a relation between mass and frequency range:\n\n\n\npatterns are simpler than human\n\n\n\n\n\n\n\n\n\n\n\npatterns could be really fast\n\n\n\n\n\n\n\n\n\n\n\npatterns could be really slow\n\n\n\n\n\n\n\n\n\n\n\nsome animals use some tricks!\n\nBBC, Earth’s tropical Island – Borneo (20:47), see here\n\nanimals adapt their frequency range to environment and to each other (environment pollution, listen to NPR Invisibilia’s episode The Last Sound)",
+    "section": "",
+    "text": "there is a relation between mass and frequency range:\n\n\n\npatterns are simpler than human\n\n\n\npatterns could be really fast\n\n\n\npatterns could be really slow\n\n\n\nsome animals use some tricks!\n\n\n\nanimals adapt their frequency range to environment and to each other (environment pollution, listen to NPR Invisibilia’s episode The Last Sound)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
     ]
@@ -200,13 +210,113 @@
     ]
   },
   {
+    "objectID": "03-vowels.html",
+    "href": "03-vowels.html",
+    "title": "3  Vowels",
+    "section": "",
+    "text": "3.1 Theory",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vowels</span>"
+    ]
+  },
+  {
     "objectID": "03-vowels.html#theory",
     "href": "03-vowels.html#theory",
     "title": "3  Vowels",
-    "section": "3.1 Theory",
-    "text": "3.1 Theory\n\n3.1.1 Recap\n\nSound waves can be described as\n\n\\[\ns(t) = A \\times \\cos(2\\pi ft + \\phi)\n\\]\n\nA — amplitude;\nf — is the fundamental frequency;\nφ — phase;\nt — time.\nSpeech sounds are complex waves\nFourier transform — allows to extract components of the complex wave\nLarynx produce some sound\nVocal tract filter some frequencies\n\n\n\n\n\n\n\n\n\n\n\n\n3.1.2 How shape of the vocal tract influences on vowels? Tube model.\nHistorically, height and backness are impressionistic linguistic terms:\n\n\n\n\n\n\n\n\n\nBut we are intersted just in a cardinal points:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf we analyze acoustics we can get something like this:\n\n\n\n\n\n\n\n\n\n\n\n\n\ni\na\nu\n\n\n\n\nF1\n300\n700\n300\n\n\nF2\n2300\n1400\n800\n\n\n\nHowever, if we analyze real sounds it could be messy:\n\n\n\n\n\n\n\n\n\nTube model, after (Fant 1960): vocal tract is a tube or a set of tubes:\n\n\n\n\n\n\n\n\n\n\n\n3.1.3 Wavelength\n\n\n\n\n\n\n\n\n\n\\[c = \\frac{\\lambda}{T} = \\lambda\\times f \\approx 33400\\text{ cm/s}\\]\n\nc — speed of sound;\nλ — wavelength;\nf — sound frequency;\nT — period.\n\nNeutral vocal tract in the position for the vowel ə:\n\n\n\n\n\n\n\n\n\nResonance is a phenomenon in which a vibrating system or external force drives another system to oscillate with greater amplitude at specific frequencies. The lowest natural frequency at which such a tube resonates will have a wavelength (λ) four times the length of the tube (L).\n\\[c = \\frac{\\lambda}{T} = \\lambda\\times f \\approx 33400\\text{ cm/s}\\]\nThe tube also resonates at odd multiples of that frequency.\n\\[F_1 = \\frac{c}{\\lambda} = \\frac{c}{4 \\times L} \\approx 500 \\text{ Hz}\\] \\[F_2 = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{3} \\times L} = \\frac{3 \\times c}{4 L} \\approx 1500 \\text{ Hz}\\] \\[F_3 = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{5} \\times L} = \\frac{5 \\times c}{4 L} \\approx 2500 \\text{ Hz}\\] \\[F_n = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{n} \\times L} = \\frac{n \\times c}{4 L} \\approx n \\times 500 \\text{ Hz}\\]\nSomething like this we can expect from animals:\n\n\n\n\n\n\n\n\n\n\n\n\nWhen there is a constriction, back tube and constriction form Helmholtz resonator.\n\\[f = \\frac{c}{2\\pi} \\times \\sqrt{\\frac{A}{V\\times L}}\\]\n\nA — the area of the neck;\nL — length of the tube;\nV — volume of the air in the body.\n\n\n\n\n\n\n\n\n\n\n\n\n3.1.4 Other models\n\nPerturbation Theory [Kajiyama 1941, Mrayati et al. 1988]\nQuantal Theory (Stevens 1972)\nTheory of adaptive dispersion (Lindblom and Maddieson 1988)\n\n\n\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. Paris: Mouton.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nLindblom, Björn, and Ian Maddieson. 1988. “Phonetic Universals in Consonant Systems.” Language, Speech and Mind 6278.\n\n\nStevens, K. N. 1972. “The Quantal Nature of Speech: Evidence from Articulatory-Acoustic Data.” Human Communication: A Unified View.",
+    "section": "",
+    "text": "3.1.1 Recap\n\nSound waves can be described as\n\n\\[\ns(t) = A \\times \\cos(2\\pi ft + \\phi)\n\\]\n\nA — amplitude;\nf — is the fundamental frequency;\nφ — phase;\nt — time.\nSpeech sounds are complex waves\nFourier transform — allows to extract components of the complex wave\nLarynx produce some sound\nVocal tract filter some frequencies\n\n\n\n\n\n\n\n\n\n\n\n\n3.1.2 How shape of the vocal tract influences on vowels? Tube model.\nHistorically, height and backness are impressionistic linguistic terms:\n\n\n\n\n\n\n\n\n\nBut we are intersted just in a cardinal points:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf we analyze acoustics we can get something like this:\n\n\n\n\n\n\n\n\n\n\n\n\n\ni\na\nu\n\n\n\n\nF1\n300\n700\n300\n\n\nF2\n2300\n1400\n800\n\n\n\nHowever, if we analyze real sounds it could be messy:\n\n\n\n\n\n\n\n\n\nTube model, after (Fant 1960): vocal tract is a tube or a set of tubes:\n\n\n\n\n\n\n\n\n\n\n\n3.1.3 Wavelength\n\n\n\n\n\n\n\n\n\n\\[c = \\frac{\\lambda}{T} = \\lambda\\times f \\approx 33400\\text{ cm/s}\\]\n\nc — speed of sound;\nλ — wavelength;\nf — sound frequency;\nT — period.\n\nNeutral vocal tract in the position for the vowel ə:\n\n\n\n\n\n\n\n\n\nResonance is a phenomenon in which a vibrating system or external force drives another system to oscillate with greater amplitude at specific frequencies. The lowest natural frequency at which such a tube resonates will have a wavelength (λ) four times the length of the tube (L).\n\\[c = \\frac{\\lambda}{T} = \\lambda\\times f \\approx 33400\\text{ cm/s}\\]\nThe tube also resonates at odd multiples of that frequency.\n\\[F_1 = \\frac{c}{\\lambda} = \\frac{c}{4 \\times L} \\approx 500 \\text{ Hz}\\] \\[F_2 = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{3} \\times L} = \\frac{3 \\times c}{4 L} \\approx 1500 \\text{ Hz}\\] \\[F_3 = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{5} \\times L} = \\frac{5 \\times c}{4 L} \\approx 2500 \\text{ Hz}\\] \\[F_n = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{n} \\times L} = \\frac{n \\times c}{4 L} \\approx n \\times 500 \\text{ Hz}\\]\nSomething like this we can expect from animals:\n\n\n\n\n\n\n\n\n\n\n\n\nWhen there is a constriction, back tube and constriction form Helmholtz resonator.\n\\[f = \\frac{c}{2\\pi} \\times \\sqrt{\\frac{A}{V\\times L}}\\]\n\nA — the area of the neck;\nL — length of the tube;\nV — volume of the air in the body.\n\n\n\n\n\n\n\n\n\n\n\n\n3.1.4 Other models\n\nPerturbation Theory [Kajiyama 1941, Mrayati et al. 1988]\nQuantal Theory (Stevens 1972)\nTheory of adaptive dispersion (Lindblom and Maddieson 1988)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vowels</span>"
+    ]
+  },
+  {
+    "objectID": "03-vowels.html#vowel-formants-normalization",
+    "href": "03-vowels.html#vowel-formants-normalization",
+    "title": "3  Vowels",
+    "section": "3.2 Vowel formants’ normalization",
+    "text": "3.2 Vowel formants’ normalization\nThis section is based on (Adank 2003). However, see the more detailed overview in (Flynn 2011).\nThere are three possible sources of variation in vowel formants measurements (Ladefoged and Broadbent 1957; Pols, Tromp, and Plomp 1973: 1095; Adank 2003):\n\nacoustic variation;\nspeaker variation;\n\nsociolinguistic;\nanatomical/physiological variation;\n\nand measurement error (“residual variance” in (Pols, Tromp, and Plomp 1973)).\n\nThere are a lot of researchers aimed to reduce speaker-related variation using acoustic vowel normalization (e. g. (Gerstman 1968; Lobanov 1971; Syrdal and Gopal 1986)). However there are some researches that afraid that normalization procedures can reduce interesting for the linguistics information like sociolinguistic/dialectal signal in data (Hindle 1978; Disner 1980; Thomas 2002, 174–75).\nHuman listeners deal seemingly effortlessly with all three possible sources of variation, but the dataset from (Peterson and Barney 1952) shows extrordinary variation:\n\n\n\n\n\n\n\n\n\n\n3.2.1 Acoustic vowel normalization procedures\nThere are several classes of vowel normalization procedures:\n\nformant-based procedures (Gerstman 1968; Lobanov 1971; Fant 1975; Syrdal and Gopal 1986; Miller 1989);\nwhole-spectrum procedures (Klein, Plomp, and Pols 1970; Pols, Tromp, and Plomp 1973; Bladon and Lindblom 1981; Bladon 1982; Klatt 1982);\nNeural networks (D. J. M. Weenink 1993; D. Weenink 1997).\n\nFormant-based procedures are the most compact (just 2- or 3-dimensional represetations) and comparable crosslinguisticaly.\nIn (Adank 2003) author compared 11 methods of vowel normalization:\n\n\n\n\n\n\n\n\n\nabb\nmethod\n\n\n\n\n1\nHZ\nthe baseline condition, formants in Hz\n\n\n2\nLOG\na log-transformation of the frequency scale\n\n\n3\nBARK\na bark-transformation of the frequency scale\n\n\n4\nMEL\na mel-transformation of the frequency scale\n\n\n5\nERB\nan ERB-transformation of the frequency scale\n\n\n6\nGERSTMAN\nGerstman’s (1968) range normalization\n\n\n7\nLOBANOV\nLobanov’s (1971) z-score transformation\n\n\n8\nNORDSTRÖM & LINDBLOM\nNordström & Lindblom’s (1975) vocal-tract scaling\n\n\n9\nCLIH i4\nNearey’s (1978) individual log-mean procedure\n\n\n10\nCLIH s4\nNearey’s (1978) shared log-mean procedure\n\n\n11\nSYRDAL & GOPAL\nSyrdal & Gopal’s (1986) bark-distance model\n\n\n12\nMILLER\nMiller’s (1989) formant-ratio model\n\n\n\n\n\n3.2.2 (Lobanov 1971) z-score transformation\nThe idea behind the Lobanov’s method is simple z-normalization. Imagine some random distribution:\n\n\n\n\n\n\n\n\n\nIf we apply the folowing normalization, the distribution form will be the same, however the scale will be unified with mean = 0 and standard deviation = 1:\n\\[x_{normalized} = \\frac{x-\\mu}{\\sigma}\\]\n\n\n\n\n\n\n\n\n\n\nlibrary(phonTools)\ndata(pb52)\npb52 %&gt;% \n  group_by(speaker) %&gt;% \n  mutate(vowel = ipa::convert_phonetics(vowel, from = \"xsampa\", to = \"ipa\"),\n         scaled_f1 = scale(f1),\n         scaled_f2 = scale(f2)) %&gt;%\n  ggplot(aes(scaled_f2, scaled_f1, label = vowel, color = vowel))+\n  stat_ellipse()+\n  geom_text()+\n  scale_x_reverse()+\n  scale_y_reverse()\n\n\n\n\n\n\n\n\nYou can find implementation of other methods in R package vowels.\nTry to normalize and visualize data from the dataset Hillenbrand et al. (1995), stored in h95 variable in the package phonTools.\nSometimes it make sense to get back to the formant values:\n\npb52 %&gt;% \n  mutate(overall_mean_f1 = mean(f1),\n         overall_sd_f1 = sd(f1),\n         overall_mean_f2 = mean(f2),\n         overall_sd_f2 = sd(f2)) %&gt;% \n  group_by(speaker) %&gt;% \n  mutate(vowel = ipa::convert_phonetics(vowel, from = \"xsampa\", to = \"ipa\"),\n         sclaed_f1 = scale(f1),\n         sclaed_f2 = scale(f2),\n         restored_f1 = sclaed_f1*overall_sd_f1+overall_mean_f1,\n         restored_f2 = sclaed_f2*overall_sd_f2+overall_mean_f2) %&gt;%\n  ggplot(aes(restored_f2, restored_f1, label = vowel, color = vowel))+\n  stat_ellipse()+\n  geom_text()+\n  scale_x_reverse()+\n  scale_y_reverse()\n\n\n\n\n\n\n\n\n\n\n3.2.3 vowels package\nYou can find implementation of other methods in R package vowels:\n\nlibrary(vowels)\ndata(ohiovowels)\nvowelplot(norm.lobanov(ohiovowels), color=\"vowels\", label=\"vowels\")\n\n\n\n\n\n\n\nvowelplot(norm.labov(ohiovowels), color=\"vowels\", label=\"vowels\")\n\n\n\n\n\n\n\nvowelplot(norm.nearey(ohiovowels), color=\"vowels\", label=\"vowels\")\n\n\n\n\n\n\n\nvowelplot(norm.wattfabricius(ohiovowels), color=\"vowels\", label=\"vowels\")\n\n\n\n\n\n\n\n\n\n\n\n\nAdank, P. M. 2003. “Vowel Normalization. A Perceptual Acoustic Study of Dutch Vowels.” PhD thesis, Ponsen & Looijen bv, Wageningen.\n\n\nBladon, RAW. 1982. “Arguments Against Formants in the Auditory Representation of Speech.” The Representation of Speech in the Peripheral Auditory System.\n\n\nBladon, RAW, and Björn Lindblom. 1981. “Modeling the Judgment of Vowel Quality Differences.” The Journal of the Acoustical Society of America 69 (5): 1414–22.\n\n\nDisner, S. F. 1980. “Evaluation of Vowel Normalization Procedures.” The Journal of the Acoustical Society of America 67 (1): 253–61.\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. Paris: Mouton.\n\n\n———. 1975. “Non-Uniform Vowel Normalization.” STL-QPSR 16 (2-3): 1–19.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nFlynn, N. 2011. “Comparing Vowel Formant Normalisation Procedures.” York Papers in Linguistics Series 2 (11): 1–28.\n\n\nGerstman, Louis. 1968. “Classification of Self-Normalized Vowels.” IEEE Transactions on Audio and Electroacoustics 16 (1): 78–80.\n\n\nHindle, D. 1978. “Approaches to Vowel Normalization in the Study of Natural Speech.” Linguistic Variation: Models and Methods, 161–71.\n\n\nKlatt, D. 1982. “Prediction of Perceived Phonetic Distance from Critical-Band Spectra: A First Step.” In ICASSP’82. IEEE International Conference on Acoustics, Speech, and Signal Processing, 7:1278–81. IEEE.\n\n\nKlein, W., R. Plomp, and L. C. W. Pols. 1970. “Vowel Spectra, Vowel Spaces, and Vowel Identification.” The Journal of the Acoustical Society of America 48 (4B): 999–1009.\n\n\nLadefoged, P., and D. E. Broadbent. 1957. “Information Conveyed by Vowels.” The Journal of the Acoustical Society of America 29 (1): 98–104.\n\n\nLindblom, Björn, and Ian Maddieson. 1988. “Phonetic Universals in Consonant Systems.” Language, Speech and Mind 6278.\n\n\nLobanov, B. M. 1971. “Classification of Russian Vowels Spoken by Different Speakers.” The Journal of the Acoustical Society of America 49 (2B): 606–8.\n\n\nMiller, J. D. 1989. “Auditory-Perceptual Interpretation of the Vowel.” The Journal of the Acoustical Society of America 85 (5): 2114–34.\n\n\nPeterson, G. E., and H. L. Barney. 1952. “Control Methods Used in a Study of the Vowels.” The Journal of the Acoustical Society of America 24 (2): 175–84.\n\n\nPols, L. C. W., H. R. C. Tromp, and R. Plomp. 1973. “Frequency Analysis of Dutch Vowels from 50 Male Speakers.” The Journal of the Acoustical Society of America 53 (4): 1093–1101.\n\n\nStevens, K. N. 1972. “The Quantal Nature of Speech: Evidence from Articulatory-Acoustic Data.” Human Communication: A Unified View.\n\n\nSyrdal, A. K., and H. S. Gopal. 1986. “A Perceptual Model of Vowel Recognition Based on the Auditory Representation of American English Vowels.” The Journal of the Acoustical Society of America 79 (4): 1086–1100.\n\n\nThomas, E. R. 2002. “Instrumental Phonetics.” In The Handbook of Language Variation and Change, edited by J. K. Chambers, P. Trudgill, and N. Schilling-Estes, 168–200. Oxford: Blackwell.\n\n\nWeenink, D. J. M. 1993. “Modelling Speaker Normalization by Adapting the Bias in a Neural Net.” In Proceedings Eurospeech93, 2259–62. Berlin.\n\n\nWeenink, David. 1997. “Category ART: A Variation on Adaptive Resonance Theory Neural Networks.” In Proc. Institute of Phonetic Sciences University of Amsterdam, 21:117–29. Citeseer.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vowels</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html",
+    "href": "04-sonorants.html",
+    "title": "4  Sonorants",
+    "section": "",
+    "text": "4.1 Earlier:\nMovements and positions of the articulators are shaping the resonating cavities of the vocal tract to modify the sound source for resonant/sonorant consonants as well:",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#earlier",
+    "href": "04-sonorants.html#earlier",
+    "title": "4  Sonorants",
+    "section": "",
+    "text": "Source-filter model\n\n\n\nTube model\n\n\n\n\n\n\napproximants/glides/semivowels (ʋ, w, j, ɰ, ɥ, /ɹ/?),\nnasals (m, ɱ, n, ɲ, ŋ, ɴ …),\nliquids l (lateral) and various /r/ (rhotics: approximants & vibrants = trill + tap / flap).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#semivowels",
+    "href": "04-sonorants.html#semivowels",
+    "title": "4  Sonorants",
+    "section": "4.2 Semivowels",
+    "text": "4.2 Semivowels\n\nThe vocal tract is relatively open for the semivowels, as it is for vowels.\nSo, the semivowels are characterized acoustically by formants.\nBut they are consonantsǃ\n\nOccur on the periphery of syllables, and not in the centers or nuclei of syllables:\n\nRussian дай [daj] ‘give’ vs. English die [daɪ]\nEnglish yo-yo [’jəʊjəʊ] vs. Russian йо-йо [jo’ʝo]\n\nBut:\n\nRussian театр [tʲi’atr] vs [tʲi’atr̥]/[tʲi’atər] ‘theatre’\nEnglish button [’bʌtn]\nMande languages ŋ ‘I’\n\n\n4.2.1 Semivowels: ʋ, w, j, ɥ, ɰ\nSince articulation of those vowels is really similar to corresponding vowel the spectrum will be simmilar:\n\nʋ, w — u\nj — i\nɰ — ɨ\nɥ — y\n\n\n\n4.2.2 Semivowels: w, ɥ\nFrench Louis [lwi] ‘Louis’ vs. lui [lɥi] ‘him’\n\n\n\n4.2.3 Semivowels: ɹ, ɻ\nThose semivowels are produced by raising the tongue toward the alveolar ridge, the tip does not touch the alveolar ridge. The acoustic results of these tongue tip adjustments are particularly obvious in the third formant: F3 falls below the F3 frequencies typical of the neighboring vowels.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#nasal-stops",
+    "href": "04-sonorants.html#nasal-stops",
+    "title": "4  Sonorants",
+    "section": "4.3 Nasal Stops",
+    "text": "4.3 Nasal Stops\nThe greater surface area of the vocal tract means that the walls of the vocal tract absorb more energy than in non-nasal sounds, and the greater volume of air means that the inertia of air within the vocal tract absorbs more sound as well.\n\n4.3.1 Nasal Stops: uvular ɴ\n\nWhen the uvula is lowered and the dorsum of the tongue raised to produce an uvular nasal, the vocal tract can be described as a uniform tube that is closed at the glottis and open at the nostrils.If we know the length of the tube, we can calculate its resonant frequencies, because this is a quarter-wave resonator (like the vocal tract configuration for schwa).\n(Fant 1960): 12.5 cm (the distance from the uvula to the nares) + 9 cm (the distance from the uvula to the glottis) ≈ 21.5 cm\n\nF1 = c/4L = 35000/4*21.5 = 407 Hz\nF2 = 3c/4L = 1221 Hz\nF3 = 5c/4L = 2035 Hz\nF4 = 7c/4L = 2849 Hz\n\nSince there is a velocity maximum at the nostrils each of the resonant frequencies will be lower. It is hard to make quantitative predictions about the formant frequencies of ɴ (the shape of the nasal passage varies), but the formant values will be spaced more closely in the uvular nasal than they are in ǝ\n\n\n\n4.3.2 Nasal Stops: m\n\n\n\n4.3.3 Nasal Stops: anti-resonance\nThe main difference between ɴ and m is that the mouth cavity forms a side branch in the resonant tube. The mouth cavity can be modeled as a tube closed at one end (the lips) and open at the other (the uvula) , with a length of about 9 cm. We can therefore calculate the resonances of the mouth cavity as we did for ǝ, ɴ:\n\nc/4L = 35,000 / (4 × 9) = 972\n3c/4L = 2,917 Hz\n\nThe resonant frequencies of the mouth cavity in nasals are not like that we’ve seen before: the mouth cavity is a side branch of a larger resonantor: it doesn’t open directly to the atmosphere. They are “absorbed” in the side branch anti-resonance the frequency components in m that are near the resonant frequencies of the mouth cavity are canceled, and become (anti-formants) in the acoustic output. Formants show up in the spectrum as peaks of sound energy, and anti-formants show up as pronounced spectral valleys.\n\n\n4.3.4 Nasal Stops: the main properties\n\nlow F1 (sometimes called the “nasal formant”),\nclose spacing between formants,\nthe presence of anti-formants, whose frequencies are determined by the place of articulation",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#laterals",
+    "href": "04-sonorants.html#laterals",
+    "title": "4  Sonorants",
+    "section": "4.4 Laterals",
+    "text": "4.4 Laterals\n\nLaterals could be analised in the similar way: a small pocket of air on top of the tongue acts as a 4cm side branch (to the main acoustic channel which curves around one or both sides of the tongue) produce anti-formants in the spectrum (≈ 2,125).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#nasal-nasalised-and-prenasalised-vowels",
+    "href": "04-sonorants.html#nasal-nasalised-and-prenasalised-vowels",
+    "title": "4  Sonorants",
+    "section": "4.5 Nasal, nasalised, and prenasalised vowels",
+    "text": "4.5 Nasal, nasalised, and prenasalised vowels\nThe most complicated configuration of the vocal tract: 2 resonant systems at once:\n\nthe pharynx cavity + the mouth cavity — the oral tract – has resonances at about 500 Hz, 1,500 Hz, and 2,500 Hz;\nthe pharynx cavity + the nasal cavity — the nasal tract – 400, 1,200, 2,000 Hz.\n\nAll these formants are present in the spectrum of nasal vowels. Of course, the resonant frequencies of the oral tract can be modified by movements of the tongue and lips, constriction of the nose at the nares.\nFor nasalised/prenasalised vowels closed mouth produced antiformants (680 Hz, 2040 Hz).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#seminar",
+    "href": "04-sonorants.html#seminar",
+    "title": "4  Sonorants",
+    "section": "4.6 Seminar",
+    "text": "4.6 Seminar\n\n4.6.1 Glides vs. Vowels\n\nPeriodic voicing\nAmplitude lower then in vowels\nFormants\nFirst Formant target is lower than vowels’ First Formant target\nOpen quotient1 (= First Harmonic - Second Harmonic) is lower for glides\n\n\n\n4.6.2 Liquids\n\nPeriodic voicing\nAmplitude lower then in vowels\nFormants\nWide average spacing of the formants\n\n\n\n4.6.3 Nasal Stops Acoustics\n\nPeriodic voicing\nAmplitude lower then in vowels\nFormants\nFormants have broad bandwidths\nLow frequency first formant\nLess space between formants\nHigher formants have low amplitude\nAntiformants\n\n\n\n4.6.4 Spectral Slices\n\n\nPraat Objects &gt; Open Sound\nView & Edit\nFind the middle of nasals or one cycle\nSpectrum &gt; View Spectrum slice (Ctrl+L)\nSelect Spectrum Slice object in Praat Object window\nPraat Objects &gt; Draw…\n\n\nWe can use the following file with Andic nasals.\n\n\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. Paris: Mouton.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nKania, Romain E, Stéphane Hans, Dana M Hartl, Philippe Clement, Lise Crevier-Buchman, and Daniel F Brasnu. 2004. “Variability of Electroglottographic Glottal Closed Quotients: Necessity of Standardization to Obtain Normative Values.” Archives of Otolaryngology–Head & Neck Surgery 130 (3): 349–52.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#footnotes",
+    "href": "04-sonorants.html#footnotes",
+    "title": "4  Sonorants",
+    "section": "",
+    "text": "During phonation, the vocal folds open and close as a result of several laryngeal and extralaryngeal activities. The phases of closure and opening of the vocal folds follow one another at a rate defined by the fundamental frequency (F0). The glottal closed quotient (GCQ) is the fraction of time the glottis is considered closed and has been thought to be a good indicator of voice quality. (Kania et al. 2004: 349) This also applicable to the open quotient.↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
     ]
   }
 ]

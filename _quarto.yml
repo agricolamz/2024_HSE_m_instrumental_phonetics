@@ -4,13 +4,14 @@ project:
   
 book:
   title: "Instrumental Phonetics"
-  author: "Г. А. Мороз"
+  author: "G. Moroz"
   repo-url: https://github.com/agricolamz/2024_HSE_m_instrumental_phonetics
   chapters:
     - index.qmd
     - 01-introduction-to-acoustic-phonetics.qmd
     - 02-bioacoustics.qmd
     - 03-vowels.qmd
+    - 04-sonorants.qmd
 
 callout-appearance: simple
 callout-icon: false
