@@ -318,5 +318,45 @@
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
     ]
+  },
+  {
+    "objectID": "05-obstruents.html",
+    "href": "05-obstruents.html",
+    "title": "5  Phonations, Obstruents",
+    "section": "",
+    "text": "5.1 Airstream mechanisms\nHere are some MRI videos.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phonations, Obstruents</span>"
+    ]
+  },
+  {
+    "objectID": "05-obstruents.html#airstream-mechanisms",
+    "href": "05-obstruents.html#airstream-mechanisms",
+    "title": "5  Phonations, Obstruents",
+    "section": "",
+    "text": "egressive\ningressive\n\n\n\n\npulmonic\nmajority of sounds\nrare\n\n\nglottalic\nejectives\nimplosives\n\n\nvelaric\n\nclicks",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phonations, Obstruents</span>"
+    ]
+  },
+  {
+    "objectID": "05-obstruents.html#phonation-types",
+    "href": "05-obstruents.html#phonation-types",
+    "title": "5  Phonations, Obstruents",
+    "section": "5.2 Phonation types",
+    "text": "5.2 Phonation types\nModal voice — the vocal folds are closed during half of each glottal cycle and open during the other half (approximately). Thus, the proportion of time that the glottis is open (the open quotient) during each cycle is 0.5.\nCreaky voice — the vocal folds are held together loosely, and air bubbles up through them. This cause longer closed phase of the glottal period and a comparably shorter open phase (and thus a smaller open quotient).\nBreathy voice — the vocal folds vibrate, but without much contact (for some people the vocal folds do not completely close during breathy voicing). So the glottis is open for a relatively long portion of each glottal cycle. A device called an artificial larynx is often used as a prosthesis for patients who have had their larynx removed due to disease.\nA device called an artificial larynx is often used as a prosthesis for patients who have had their larynx removed due to disease.\n\n\nA — the closed vocal folds produce a glottal stop ʕ\nB — the air forced through the closed vocal folds produce creaky voice\nC — air can go through vocal folds without extra pressure, making them vibrate, this is called modal voice\nD — high rate of airflow makes vocal folds vibrate even if they are slightly pulled apart (breathy voice)\nE — pulling the vocal folds further apart doesn’t allow them vibrate, the result is a voiceless sound\nF — pull the vocal fold further apart, this is called aspiration\n\nIn (Ladefoged 1971) it is suggested that there might be a continuum of phonation types from most open to most closed:\nvoiceless &gt; breathy &gt; modal &gt; creaky &gt; glottal closure\n\n5.2.1 Breathy phonation example\nAs a consequence of noise in breathy phonation, there is much more aperiodic energy across the spectrum and the formant structure is less clear (Gordon and Ladefoged 2001):\n\nSpectrograms of modal and breathy voiced nasals in the Jalapa Mazatec words /nthǽ/ ‘seed’ and /ndǽ̰/ ‘horse’ (female speaker)\n\n\n5.2.2 Creaky phonation example\nCreaky phonation is characterized with irregular glottal periods (jitter) but with clear formant structure. As a consequence of this irregularity, F\\(_0\\) is not (usually) calculated so accurately.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phonations, Obstruents</span>"
+    ]
+  },
+  {
+    "objectID": "05-obstruents.html#obstruents",
+    "href": "05-obstruents.html#obstruents",
+    "title": "5  Phonations, Obstruents",
+    "section": "5.3 Obstruents",
+    "text": "5.3 Obstruents\n\nFor obstruents the articulators form constrictions and occlusions within the vocal tract that generate aperiodic noise as the airflow passes through obstructions:\n\nmuch more restricted airflow;\nacoutically, little or no of formant structure\n\n\n5.3.1 Torbulence\nThe main factors that determine whether airflow is turbulent:\n\nthe size of the channel and\nthe volume velocity of the airflow (volume of air going past a certain point per unit time).\n\nIf 100 cm\\(^3\\) per second of air flows through a channel, turbulent airflow is created if the channel area is less than 10 mm\\(^2\\) , but not if the channel area is 20 mm\\(^2\\) . It’s easier to get turbulent airflow from a narrow straw than a wide one.\n\n\n5.3.2 Fricatives\n\nsibilant are most intensive fricatives vs. non-sibilant\nfor sibilants\n\nthe constriction between the alveolar ridge, or in the postalveolar area and the tip of the tongue, or the blade of the tongue\na second constriction between the upper and lower incisors must be narrow so that the airstream is directed over the edges of the teeth, creating turbulent airflow behind the teeth\n\nfor non-sibilants noice is not so prominent, hardly audible\n\n\nThis diagram shows the results for some models of velar and palatal consonants compared to a single tube model of a neutral vowel. (adapted from (Fant 1960: 73))\n\n\n5.3.3 Stops\n\nThe main articulatory posture during a stop is complete closure of the vocal tract, acoustically silence.\nHowever, languages use a great variety of stops, utilizing different places of articulation, stop release sounds, and accompanying noises. Different places of articulation are destinguishable because of the coarticlulation with vowels. See the following picture from (Obleser et al. 2010):\n\n\n\n\n5.3.4 Voiced Onset Time (VOT)\nThis notion was introduced in (Lisker and Abramson 1964), very influential work:\n\n\n\n\n\npicture from www.connectedpapers.com\n\n\n\n\nVOT is the timing of glottal pulsing relative to supraglottal articulation\n\n\n\n\n\nA graphical representation of the VOT of voiced, tenuis, and aspirated stops, Wikipedia\n\n\n\n\n(Abramson and Whalen 2017) argue that VOT is a cross-linguistically useful (and simple) measure, even if not a universal discriminator.\n\naspirated voiced in Hindi: pʰ, p, b and bʰ. – both latter sound types show negative VOT, bH showing breathy voice filling before the onset of modal voice)\npre-aspirated in Swedish, Icelandic, Scots Gaelic and Tarascan – period of aspiration preceding a silent CD\nKorean: unaspirated, slightly aspirated and strongly aspirated (degree of VOT)\nConsidering a sample of languages, (Cho and Ladefoged 1999) show that VOT measurements do not directly depend on sound types and oppositions, when there are ejectives in a phonological system:\n\n\n\n\n\n\nAbramson, A. S., and D. H. Whalen. 2017. “Voice Onset Time (VOT) at 50: Theoretical and Practical Issues in Measuring Voicing Distinctions.” Journal of Phonetics 63: 75–86.\n\n\nCho, T., and P. Ladefoged. 1999. “Variation and Universals in VOT: Evidence from 18 Languages.” Journal of Phonetics 27 (2): 207–29.\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. Paris: Mouton.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nGordon, M., and P. Ladefoged. 2001. “Phonation Types: A Cross-Linguistic Overview.” Journal of Phonetics 29 (4): 383–406.\n\n\nLadefoged, Peter. 1971. Preliminaries to Linguistic Phonetics. University of Chicago press.\n\n\nLisker, Leigh, and Arthur S Abramson. 1964. “A Cross-Language Study of Voicing in Initial Stops: Acoustical Measurements.” Word 20 (3): 384–422.\n\n\nObleser, J., A. Leaver, J. VanMeter, and J. P. Rauschecker. 2010. “Segregation of Vowels and Consonants in Human Auditory Cortex: Evidence for Distributed Hierarchical Organization.” Frontiers in Psychology 1: 232.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phonations, Obstruents</span>"
+    ]
   }
 ]

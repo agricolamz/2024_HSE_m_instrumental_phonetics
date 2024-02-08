@@ -12,6 +12,7 @@ book:
     - 02-bioacoustics.qmd
     - 03-vowels.qmd
     - 04-sonorants.qmd
+    - 05-obstruents.qmd
 
 callout-appearance: simple
 callout-icon: false
