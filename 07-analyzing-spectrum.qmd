@@ -23,7 +23,7 @@ library(checkdown)
 include_graphics("sounds/for_practice/vowels/merged/1_bag_big.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("bag", "big")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -39,7 +39,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/2_fraction_friction.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("fraction", "friction")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -55,7 +55,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/3_men_man.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("men", "man")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -71,7 +71,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/4_Rick_rook_wrek.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("Rick", "rook", "wrek")
 expand.grid(my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var2 != Var3) %>% 
@@ -87,7 +87,7 @@ expand.grid(my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/5_neck_nook_Nick.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("neck", "nook", "Nick")
 expand.grid(my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var2 != Var3) %>% 
@@ -103,7 +103,7 @@ expand.grid(my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/6_book_beck_back.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("book", "beck", "back")
 expand.grid(my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var2 != Var3) %>% 
@@ -119,7 +119,7 @@ expand.grid(my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/7_hick_hack_hook.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("hick", "hack", "hook")
 expand.grid(my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var2 != Var3) %>% 
@@ -135,7 +135,7 @@ expand.grid(my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/8_mood_mid_mad.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("mood", "mid", "mad")
 expand.grid(my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var2 != Var3) %>% 
@@ -151,7 +151,7 @@ expand.grid(my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/9_trick_trek_track.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("trick", "trek", "track")
 expand.grid(my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var2 != Var3) %>% 
@@ -167,7 +167,7 @@ expand.grid(my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/10_dam_dim_deem_doom.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("dam", "dim", "deem", "doom")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -183,7 +183,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/11_foot_feat_fat_fit.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("foot", "feat", "fat", "fit")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -199,7 +199,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/12_moose_mess_mass_miss.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("moose", "mess", "mass", "miss")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -215,7 +215,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/13_net_nut_knit_knot.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("net", "nut", "knit", "knot")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -232,7 +232,7 @@ include_graphics("sounds/for_practice/vowels/merged/14_roast_wrist_roost_rest.pn
 ```
 
 
-```{r, results='asis'}
+```{r}
 my_var <- c("roast", "wrist", "roost", "rest")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -248,7 +248,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/15_skin_skim_scam_scan.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("skin", "skim", "scam", "scan")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -264,7 +264,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/16_bit_bat_boot_bet_bot.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("bit", "bat", "boot", "bet", "bot")
 expand.grid(my_var, my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var1 != Var5, Var2 != Var3, Var2 != Var4, Var2 != Var5, Var3 != Var4, Var3 != Var5, Var4 != Var5) %>% 
@@ -280,7 +280,7 @@ expand.grid(my_var, my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/17_pack_pick_puck_poke_peck.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("pack", "pick", "puck", "poke", "peck")
 expand.grid(my_var, my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var1 != Var5, Var2 != Var3, Var2 != Var4, Var2 != Var5, Var3 != Var4, Var3 != Var5, Var4 != Var5) %>% 
@@ -297,7 +297,7 @@ expand.grid(my_var, my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/18_pat_pit_pet_put_peat.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("pat", "pit", "pet", "put", "peat")
 expand.grid(my_var, my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var1 != Var5, Var2 != Var3, Var2 != Var4, Var2 != Var5, Var3 != Var4, Var3 != Var5, Var4 != Var5) %>% 
@@ -313,7 +313,7 @@ expand.grid(my_var, my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/vowels/merged/19_ring_wrong_rank_rink_rang.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("ring", "wrong", "rank", "rink", "rang")
 expand.grid(my_var, my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var1 != Var5, Var2 != Var3, Var2 != Var4, Var2 != Var5, Var3 != Var4, Var3 != Var5, Var4 != Var5) %>% 
@@ -331,7 +331,7 @@ expand.grid(my_var, my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/1_ass_act_ash_ax.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("ass","act","ash","ax")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -347,7 +347,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/2_bent_bend_bench.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("bent", "bend", "bench")
 expand.grid(my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var2 != Var3) %>% 
@@ -363,7 +363,7 @@ expand.grid(my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/3_bed_bet.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("bed", "bet")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -379,7 +379,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/4_shag_sag_tag.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("shag", "sag", "tag")
 expand.grid(my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var2 != Var3) %>% 
@@ -395,7 +395,7 @@ expand.grid(my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/5_fax_tact_tax_sax.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("fax", "tact", "tax", "sax")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -411,7 +411,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/6_sank_tank_thank_shank.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("sank", "tank", "thank", "shank")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -427,7 +427,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/7_debt_shed_dead_death.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("debt", "shed", "dead", "death")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -443,7 +443,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/8_ten_den_then_send.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("ten", "den", "then", "send")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -459,7 +459,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/9_tent_tenth_dent_cent.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("tent", "tenth", "dent", "cent")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -475,7 +475,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/10_dread_threat_tread_thread.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("dread", "threat", "tread", "thread")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -491,7 +491,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/11_sash_sass_hash.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("sash", "sass", "hash")
 expand.grid(my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var2 != Var3) %>% 
@@ -507,7 +507,7 @@ expand.grid(my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/12_hag_shack_hack_sac.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("hag", "shack", "hack", "sac")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -523,7 +523,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/13_six_fix_thick_sick.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("six", "fix", "thick", "sick")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -539,7 +539,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/14_thread_threat_fresh_fret.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("thread", "threat", "fresh", "fret")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -555,7 +555,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/15_should_hood_foot_hook.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("should", "hood", "foot", "hook")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -571,7 +571,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/16_wag_nag_yak_knack.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("wag", "nag", "yak", "knack")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -587,7 +587,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/17_net_yet_wet_let.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("net", "yet", "wet", "let")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -603,7 +603,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/18_wink_rink_mink_link.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("wink", "rink", "mink", "link")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -619,7 +619,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/19_scan_scare_scam_scar.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("scan", "scare", "scam", "scar")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -635,7 +635,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/20_hen_hell_hay_hem.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("hen", "hell", "hay", "hem")
 expand.grid(my_var, my_var, my_var, my_var) %>% 
   filter(Var1 != Var2, Var1 != Var3, Var1 != Var4, Var2 != Var3, Var2 != Var4, Var3 != Var4) %>% 
@@ -653,7 +653,7 @@ expand.grid(my_var, my_var, my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/21_absEnt_Absent.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("absEnt", "Absent")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -669,7 +669,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/22_accEnt_Accent.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("accEnt", "Accent")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -685,7 +685,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/23_addrEss_Address.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("addrEss", "Address")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -701,7 +701,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/24_consOle_console.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("consOle", "cOnsole")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -717,7 +717,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/25_contEnt_cOntent.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("contEnt", "cOntent")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -733,7 +733,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/26_Extract_extrAct.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("Extract", "extrAct")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -749,7 +749,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/27_impOrt_Import.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("impOrt", "Import")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -765,7 +765,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/28_pErfect_perfEct.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("pErfect", "perfEct")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -781,7 +781,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/29_presEnt_prEsent.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("presEnt", "prEsent")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -797,7 +797,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/consonants/merged/30_rEsearch_resEArch.png")
 ```
 
-```{r, results='asis'}
+```{r}
 my_var <- c("rEsearch", "resEArch")
 expand.grid(my_var, my_var) %>% 
   filter(Var1 != Var2) %>% 
@@ -815,7 +815,7 @@ expand.grid(my_var, my_var) %>%
 include_graphics("sounds/for_practice/animals/01_dog.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("dog")  
 ```
 
@@ -825,7 +825,7 @@ check_question("dog")
 include_graphics("sounds/for_practice/animals/02_duck.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("duck")  
 ```
 
@@ -835,7 +835,7 @@ check_question("duck")
 include_graphics("sounds/for_practice/animals/03_pig.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("pig")  
 ```
 
@@ -845,7 +845,7 @@ check_question("pig")
 include_graphics("sounds/for_practice/animals/04_mouse.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("mouse")  
 ```
 
@@ -855,7 +855,7 @@ check_question("mouse")
 include_graphics("sounds/for_practice/animals/05_hoarse.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("horse")  
 ```
 
@@ -865,7 +865,7 @@ check_question("horse")
 include_graphics("sounds/for_practice/animals/06_fox.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("fox")  
 ```
 
@@ -875,7 +875,7 @@ check_question("fox")
 include_graphics("sounds/for_practice/animals/07_dear.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("deer")  
 ```
 
@@ -885,7 +885,7 @@ check_question("deer")
 include_graphics("sounds/for_practice/animals/08_sheep.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("sheep")  
 ```
 
@@ -895,7 +895,7 @@ check_question("sheep")
 include_graphics("sounds/for_practice/animals/09_cow.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("cow")  
 ```
 
@@ -905,7 +905,7 @@ check_question("cow")
 include_graphics("sounds/for_practice/animals/10_wolf.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("wolf")  
 ```
 
@@ -915,7 +915,7 @@ check_question("wolf")
 include_graphics("sounds/for_practice/animals/11_lion.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("lion")  
 ```
 
@@ -925,7 +925,7 @@ check_question("lion")
 include_graphics("sounds/for_practice/animals/12_tiger.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("tiger")  
 ```
 
@@ -935,7 +935,7 @@ check_question("tiger")
 include_graphics("sounds/for_practice/animals/13_turkey.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("turkey")  
 ```
 
@@ -945,7 +945,7 @@ check_question("turkey")
 include_graphics("sounds/for_practice/animals/14_parrot.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("parrot")  
 ```
 
@@ -955,7 +955,7 @@ check_question("parrot")
 include_graphics("sounds/for_practice/animals/15_rabbit.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("rabbit")  
 ```
 
@@ -965,7 +965,7 @@ check_question("rabbit")
 include_graphics("sounds/for_practice/animals/16_zebra.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("zebra")  
 ```
 
@@ -975,7 +975,7 @@ check_question("zebra")
 include_graphics("sounds/for_practice/animals/17_koala.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("koala")  
 ```
 
@@ -985,7 +985,7 @@ check_question("koala")
 include_graphics("sounds/for_practice/animals/18_cheetah.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("cheetah")  
 ```
 
@@ -995,7 +995,7 @@ check_question("cheetah")
 include_graphics("sounds/for_practice/animals/19_leopard.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("leopard")  
 ```
 
@@ -1005,7 +1005,7 @@ check_question("leopard")
 include_graphics("sounds/for_practice/animals/20_monkey.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("monkey")  
 ```
 
@@ -1015,7 +1015,7 @@ check_question("monkey")
 include_graphics("sounds/for_practice/animals/21_squirrel.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("squirrel")  
 ```
 
@@ -1025,7 +1025,7 @@ check_question("squirrel")
 include_graphics("sounds/for_practice/animals/22_elephant.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("elephant")  
 ```
 
@@ -1035,7 +1035,7 @@ check_question("elephant")
 include_graphics("sounds/for_practice/animals/23_hedgehog.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("hedgehog")  
 ```
 
@@ -1045,6 +1045,6 @@ check_question("hedgehog")
 include_graphics("sounds/for_practice/animals/24_kangaroo.png")
 ```
 
-```{r, results='asis'}
+```{r}
 check_question("kangaroo")  
 ```

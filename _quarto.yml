@@ -13,6 +13,8 @@ book:
     - 03-vowels.qmd
     - 04-sonorants.qmd
     - 05-obstruents.qmd
+    - 06-prosody.qmd
+    - 07-analyzing-spectrum.qmd
 
 callout-appearance: simple
 callout-icon: false
