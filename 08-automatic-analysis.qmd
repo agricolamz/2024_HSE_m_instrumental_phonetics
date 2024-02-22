@@ -15,9 +15,82 @@ library(checkdown)
 
 # R package for phonetics
 
+Some data to play with:
 
 - [Andi annotation textgrid](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_instrumental_phonetics/main/sounds/andi_plosives.TextGrid)
 - [Andi sound file](https://github.com/agricolamz/2024_HSE_m_instrumental_phonetics/raw/main/sounds/andi_plosives.wav)
+
+Duration analysis:
+
+```{r}
+library(tidyverse)
+andic <- read_csv("sounds/andi_plosives.csv")
+
+andic |> 
+  mutate(duration = tmax - tmin) |> 
+  filter(tier == "CD/VOT") |> 
+  separate(text, into = c("type", "sound"), sep = "_") |> 
+  ggplot(aes(type, duration))+
+  geom_point()+
+  facet_grid(~sound)
+```
+
+```{r}
+a <- read_csv("sounds/a.Table")
+
+a |> 
+  ggplot(aes(`time(s)`))+
+  geom_point(aes(y = `F1(Hz)`))+
+  geom_point(aes(y = `F2(Hz)`))
+```
+
+
+Here are the [`s1_all.TextGrid`](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.TextGrid), [`s1_all.wav`](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.wav) and the `get-formants-args.praat`:
+
+```
+sound = Read from file: "s1_all.wav"
+formant = To Formant (burg): 0, 5, 5000, 0.05, 50
+textgrid = Read from file: "s1_all.TextGrid"
+header$ = "vowel,F1,F2,F3"
+writeInfoLine: header$
+
+form Get formants
+    choice Measure 1
+        button Hertz
+        button Bark
+    real Window_(sec) 0.03
+endform
+
+if measure == 1
+    measure$ = "Hertz"
+else
+    measure$ = "Bark"
+endif
+
+selectObject: textgrid
+intervals = Get number of intervals: 3
+
+for interval to intervals - 1
+    label$ = Get label of interval: 3, interval
+    if label$ != ""
+        start = Get start time of interval: 3, interval
+        start = start + window
+        end = Get end time of interval: 3, interval
+        end = end - window
+        vowel$ = Get label of interval: 3, interval
+
+        selectObject: formant
+        f1 = Get mean: 1, start, end, measure$
+        f2 = Get mean: 2, start, end, measure$
+        f3 = Get mean: 3, start, end, measure$
+
+        resultLine$ = "'vowel$','f1','f2','f3'"
+        appendInfoLine: resultLine$
+        selectObject: textgrid
+    endif
+endfor
+```
+
 
 ## `ipa`
 
