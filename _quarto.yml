@@ -15,6 +15,7 @@ book:
     - 05-obstruents.qmd
     - 06-prosody.qmd
     - 07-analyzing-spectrum.qmd
+    - 08-automatic-analysis.qmd
 
 callout-appearance: simple
 callout-icon: false
