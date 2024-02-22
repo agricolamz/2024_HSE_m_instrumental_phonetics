@@ -48,10 +48,10 @@ a |>
 Here are the [`s1_all.TextGrid`](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.TextGrid), [`s1_all.wav`](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.wav) and the `get-formants-args.praat`:
 
 ```
-###########################################################
-####### Change the path! ##################################
-outputPath$ = "/home/agricolamz/Desktop/ex/formants.csv"
-###########################################################
+##############################################################
+####### Change the path! #####################################
+outputPath$ = "/home/agricolamz/Desktop/ex/abaza_formants.csv"
+##############################################################
 
 writeInfoLine: "Extracting formants..."
 
@@ -104,6 +104,20 @@ endfor
 
 appendInfoLine: newline$, newline$, "Whoo-hoo! It didn't crash!"
 ```
+
+And now we can visualized the results:
+
+```{r}
+abaza_formants <- read_csv("sounds/abaza_formants.csv")
+
+abaza_formants |> 
+  filter(phoneme != "") |> 
+  ggplot(aes(F2, F1, label = phoneme))+
+  geom_label()+
+  scale_x_reverse()+
+  scale_y_reverse()
+```
+
 
 
 ## `ipa`
