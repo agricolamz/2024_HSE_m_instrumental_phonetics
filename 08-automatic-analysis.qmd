@@ -48,6 +48,11 @@ a |>
 Here are the [`s1_all.TextGrid`](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.TextGrid), [`s1_all.wav`](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.wav) and the `get-formants-args.praat`:
 
 ```
+###########################################################
+####### Change the path! ##################################
+outputPath$ = "/home/agricolamz/Desktop/ex/formants.csv"
+###########################################################
+
 writeInfoLine: "Extracting formants..."
 
 # Extract the names of the Praat objects
@@ -64,7 +69,6 @@ select Sound 'thisSound$'
 To Formant (burg)... 0 5 5000 0.025 50
 
 # Create the output file and write the first line.
-outputPath$ = "/home/agricolamz/Desktop/ex/formants.csv"
 writeFileLine: "'outputPath$'", "time,phoneme,F1,F2,F3"
 
 # Loop through each interval on the phoneme tier.

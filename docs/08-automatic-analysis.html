@@ -300,7 +300,12 @@ div.csl-indent {
 </div>
 </div>
 <p>Here are the <a href="https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.TextGrid"><code>s1_all.TextGrid</code></a>, <a href="https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.wav"><code>s1_all.wav</code></a> and the <code>get-formants-args.praat</code>:</p>
-<pre><code>writeInfoLine: "Extracting formants..."
+<pre><code>###########################################################
+####### Change the path! ##################################
+outputPath$ = "/home/agricolamz/Desktop/ex/formants.csv"
+###########################################################
+
+writeInfoLine: "Extracting formants..."
 
 # Extract the names of the Praat objects
 thisSound$ = selected$("Sound")
@@ -316,7 +321,6 @@ select Sound 'thisSound$'
 To Formant (burg)... 0 5 5000 0.025 50
 
 # Create the output file and write the first line.
-outputPath$ = "/home/agricolamz/Desktop/ex/formants.csv"
 writeFileLine: "'outputPath$'", "time,phoneme,F1,F2,F3"
 
 # Loop through each interval on the phoneme tier.
