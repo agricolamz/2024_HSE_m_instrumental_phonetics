@@ -15,6 +15,10 @@ library(checkdown)
 
 # R package for phonetics
 
+
+- [Andi annotation textgrid](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_instrumental_phonetics/main/sounds/andi_plosives.TextGrid)
+- [Andi sound file](https://github.com/agricolamz/2024_HSE_m_instrumental_phonetics/raw/main/sounds/andi_plosives.wav)
+
 ## `ipa`
 
 Converts character vectors between phonetic representations. Supports IPA (International Phonetic Alphabet), X-SAMPA (Extended Speech Assessment Methods Phonetic Alphabet), and ARPABET (used by the CMU Pronouncing Dictionary).
