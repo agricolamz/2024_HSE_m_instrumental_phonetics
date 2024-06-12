@@ -39,6 +39,8 @@ ggsave("images/02.01_mass_freq.png")
 
 ![](images/02.01_mass_freq.png)
 
+However some animals use tricks, e. g. koala males have an extra set of vocal cords that are 15 times wider than normal and females prefer males with the lowest voices. (see Earthsounds, e. 1, 23:00)
+
 - patterns are simpler than human
 
 ```{r, cache=TRUE}
@@ -65,7 +67,7 @@ BBC, Earth's tropical Island -- Borneo (20:47), see [here](https://www.youtube.c
 
 ## Hearing and Sound Production
 
-- Hearing is surprisingly simmilar
+- Hearing is surprisingly similar (but see [this video](https://youtu.be/VElc-9Xa1f0?feature=shared) by TED-Ed)
 - Sound production of breathing animals:
     - non-aquatic mammals
         - exhalation through valve

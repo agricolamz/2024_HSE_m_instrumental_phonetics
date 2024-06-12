@@ -96,7 +96,7 @@ for thisInterval from 1 to numberOfPhonemes
     appendFileLine: "'outputPath$'", 
                     ...midpoint, ",",
                     ...thisPhoneme$, ",",
-										...duration, ",",
+                    ...duration, ",",
                     ...f1, ",", 
                     ...f2, ",", 
                     ...f3
